@@ -590,7 +590,7 @@ class PHPExcel_Cell
         } elseif ($pCoordinateString == '') {
             throw new PHPExcel_Exception('Cell coordinate can not be zero-length string');
         }
-
+        return null;
         throw new PHPExcel_Exception('Invalid cell coordinate '.$pCoordinateString);
     }
 
